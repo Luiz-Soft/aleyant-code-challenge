@@ -1,0 +1,113 @@
+{
+    "name": "Print Products",
+    "children": [
+      {
+        "name": "Business",
+        "children": [
+          {
+            "name": "Business Essentials",
+            "children": [
+              {
+                "id": "business-cards",
+                "name": "Business Cards",
+                "description": "Premium-quality business cards with matte, gloss, or soft-touch finishes.",
+                "priceRange": "$15 - $100",
+                "image": "https://img.freepik.com/free-photo/book-composition-with-openbook_23-2147690555.jpg"
+              },
+              {
+                "id": "letterheads",
+                "name": "Letterheads",
+                "description": "Custom letterheads with your logo and contact info on professional stock.",
+                "priceRange": "$25 - $150",
+                "image": "https://img.freepik.com/free-photo/book-composition-with-openbook_23-2147690555.jpg"
+              },
+              {
+                "id": "envelopes",
+                "name": "Envelopes",
+                "description": "Branded envelopes for professional correspondence and marketing.",
+                "priceRange": "$20 - $120",
+                "image": "https://img.freepik.com/free-photo/book-composition-with-openbook_23-2147690555.jpg"
+              }
+            ]
+          },
+          {
+            "name": "Marketing Materials",
+            "children": [
+              {
+                "id": "flyers",
+                "name": "Flyers",
+                "description": "Vibrant full-color flyers to promote events, sales, or announcements.",
+                "priceRange": "$30 - $250",
+                "image": "https://img.freepik.com/free-photo/book-composition-with-openbook_23-2147690555.jpg"
+              },
+              {
+                "id": "brochures",
+                "name": "Brochures",
+                "description": "Tri-fold brochures with customizable layouts and finishes.",
+                "priceRange": "$40 - $300",
+                "image": "https://img.freepik.com/free-photo/book-composition-with-openbook_23-2147690555.jpg"
+              },
+              {
+                "id": "postcards",
+                "name": "Postcards",
+                "description": "Compact postcards for mailing or handouts, with double-sided print.",
+                "priceRange": "$20 - $180",
+                "image": "https://img.freepik.com/free-photo/book-composition-with-openbook_23-2147690555.jpg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Publishing & Custom",
+        "children": [
+          {
+            "name": "Publishing & Stationery",
+            "children": [
+              {
+                "id": "books",
+                "name": "Books",
+                "description": "Perfect-bound or spiral-bound books for manuals, guides, or catalogs.",
+                "priceRange": "$100 - $1000",
+                "image": "https://img.freepik.com/free-photo/book-composition-with-openbook_23-2147690555.jpg"
+              },
+              {
+                "id": "journals",
+                "name": "Journals",
+                "description": "Custom-printed journals with lined or blank pages and durable covers.",
+                "priceRange": "$45 - $250",
+                "image": "https://img.freepik.com/free-photo/book-composition-with-openbook_23-2147690555.jpg"
+              },
+              {
+                "id": "calendars",
+                "name": "Calendars",
+                "description": "Wall and desk calendars printed with your photos or branding.",
+                "priceRange": "$30 - $220",
+                "image": "https://img.freepik.com/free-photo/book-composition-with-openbook_23-2147690555.jpg"
+              }
+            ]
+          },
+          {
+            "name": "Specialty & Custom",
+            "children": [
+              {
+                "id": "certificates",
+                "name": "Certificates",
+                "description": "Award certificates on premium textured stock with foil options.",
+                "priceRange": "$20 - $80",
+                "image": "https://img.freepik.com/free-photo/book-composition-with-openbook_23-2147690555.jpg"
+              },
+              {
+                "id": "wall-art",
+                "name": "Wall Art",
+                "description": "High-quality canvas and framed prints for interior decoration.",
+                "priceRange": "$60 - $300",
+                "image": "https://img.freepik.com/free-photo/book-composition-with-openbook_23-2147690555.jpg"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

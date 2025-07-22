@@ -61,10 +61,24 @@ button:focus-visible {
 }
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  flex-shrink: 0;
+  z-index: 10;
+  position: relative;
+}
+
+.app__main {
+  flex: 1 1 auto;
+  overflow-y: auto;
 }
 
 @media (prefers-color-scheme: light) {
