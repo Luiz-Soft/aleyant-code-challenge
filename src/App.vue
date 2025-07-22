@@ -1,10 +1,12 @@
 <template>
   <div class="app">
     <Header @toggle-filters="toggleFilters" />
-    <FiltersSidebar :show-filters="showFilters" @close-filters="closeFilters" />
+    <FiltersSidebar
+      :show-filters="showFilters"
+      @close-filters="closeFilters"
+    />
 
-    <WelcomeModal :show="true" @close="showModal = false" />
-
+    <WelcomeModal />
 
     <main class="app__main">
       <router-view @toggle-filters="toggleFilters" />
@@ -13,14 +15,13 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 import Header from '@/components/Header.vue'
 import FiltersSidebar from '@/components/FiltersSidebar.vue'
 import WelcomeModal from '@/components/WelcomeModal.vue'
 import ProductDetailsModal from '@/components/ProductDetailsModal.vue'
 
 const showFilters = ref(false)
-const showWelcomeModal = ref(true)
 
 function toggleFilters() {
   showFilters.value = !showFilters.value
@@ -29,5 +30,4 @@ function toggleFilters() {
 function closeFilters() {
   showFilters.value = false
 }
-
 </script>

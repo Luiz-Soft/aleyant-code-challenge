@@ -29,7 +29,9 @@
         </button>
       </div>
 
-      <p v-else class="text-gray-500">{{ $t('catalog.no-products') }}</p>
+      <p v-else class="text-gray-500">
+        {{ $t('catalog.no-products') }}
+      </p>
     </div>
   </div>
 </template>
