@@ -2,7 +2,7 @@
     <div class="fixed inset-0 z-50 pointer-events-none">
       <div
         v-if="showFilters"
-        class="absolute inset-0 bg-[rgba(0,0,0,0.15)] pointer-events-auto"
+        class="absolute inset-0 bg-black/15 pointer-events-auto"
         @click.self="hideFilters"
       ></div>
       <transition name="drawer">
@@ -17,7 +17,7 @@
           >
             ✕
           </button>
-          <h2 class="text-lg font-semibold mb-4 justify-start">Filters</h2>
+          <h2 class="text-lg font-semibold mb-4 justify-start">{{ $t('filters') }}</h2>
           <CategoryTree />
         </div>
       </transition>

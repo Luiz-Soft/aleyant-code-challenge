@@ -1,15 +1,35 @@
 <template>
-    <header class="header">
-      <button class="header__menu-button" @click="$emit('toggle-filters')">
-        &#9776;
-      </button>
-      <h1 class="header__title">frontend-challenge</h1>
-    </header>
-  </template>
-  
-  <script setup>
-  // Emits toggle-filters event to parent
-  </script>
+  <header class="header">
+    <button class="header__menu-button" @click="$emit('toggle-filters')">
+      &#9776;
+    </button>
+
+    <h1 class="header__title">
+      <div>{{ $t('app-title') }}</div>
+    </h1>
+
+    <select  v-model="selectedLocale" class="header__lang-selector">
+      <option value="eng">ENG</option>
+      <option value="pt">PT</option>
+    </select>
+  </header>
+</template>
+
+<script setup>
+import i18n from '@/plugins/i18n'
+import { ref, watch } from 'vue'
+
+const selectedLocale = ref(i18n.global.locale.value)
+
+function changeLanguage(event) {
+  i18n.global.locale.value = event.target.value
+  selectedLocale.value = i18n.global.locale.value
+}
+
+watch(selectedLocale, (newLocale) => {
+  i18n.global.locale.value = newLocale
+})
+</script>
   
   <style lang="scss" scoped>
   .header {
@@ -34,9 +54,21 @@
       transition: color 0.2s ease;
   
       &:hover {
-        color: #d1d5db;
+        color: #d1d5db00;
       }
     }
+
+    &__lang-selector {
+    margin-left: auto;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+
+  }
   
     &__title {
       font-size: 1.25rem;

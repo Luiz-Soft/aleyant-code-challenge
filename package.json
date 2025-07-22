@@ -10,11 +10,14 @@
   },
   "dependencies": {
     "axios": "^1.10.0",
+    "canvas-confetti": "^1.9.3",
     "pinia": "^3.0.3",
     "vue": "^3.5.17",
+    "vue-i18n": "^11.1.10",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@intlify/vue-i18n-loader": "^5.0.1",
     "@tailwindcss/vite": "^4.1.11",
     "@vitejs/plugin-vue": "^6.0.0",
     "autoprefixer": "^10.4.21",

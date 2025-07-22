@@ -1,0 +1,10 @@
+{
+    "app-title": "Aleyant Desafio de Código",
+    "filters-title": "Filtros",
+    "buy-it": "COMPRAR!",
+    "catalog": {
+        "no-products": "No products selected.",
+        "loading": "Loading catalog...",
+        "error": "Error loading catalog."
+      }
+}
