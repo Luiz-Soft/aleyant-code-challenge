@@ -30,5 +30,4 @@ function closeFilters() {
   showFilters.value = false
 }
 
-// Optionally delay modal or persist dismissal using localStorage here
 </script>
