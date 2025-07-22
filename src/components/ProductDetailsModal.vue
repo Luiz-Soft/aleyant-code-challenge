@@ -5,7 +5,7 @@
   >
     <div class="bg-white rounded-lg shadow-lg w-full max-w-md p-6 relative">
       <button
-        class="absolute top-2 right-2 text-gray-500 hover:text-black"
+        class="absolute top-2 right-2 text-gray-500 hover:text-white"
         @click="close"
         aria-label="Close"
       >
@@ -35,7 +35,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import confetti from 'canvas-confetti'
 
 const props = defineProps({

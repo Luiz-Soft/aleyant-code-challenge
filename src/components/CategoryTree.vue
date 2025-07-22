@@ -41,7 +41,6 @@ import { storeToRefs } from 'pinia'
 import { useCatalogStore } from '@/stores/useCatalogStore'
 import CategoryTree from './CategoryTree.vue'
 
-// Optional prop: only used for recursive children
 const props = defineProps({
   items: Array
 })
@@ -49,7 +48,6 @@ const props = defineProps({
 const catalogStore = useCatalogStore()
 const { selectedProductIds } = storeToRefs(catalogStore)
 
-// Root-level items: use prop if passed (child), otherwise use store (root)
 const rootItems = computed(() =>
   props.items || catalogStore.catalog?.children || []
 )
@@ -75,6 +73,7 @@ ul {
   list-style: none;
   padding-left: 0.5rem;
 }
+
 button {
   background: none;
   border: none;
